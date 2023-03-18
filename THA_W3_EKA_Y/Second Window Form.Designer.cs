@@ -164,6 +164,7 @@
             this.Agree_check.TabIndex = 10;
             this.Agree_check.Text = "I agree to the Terms of Agreement";
             this.Agree_check.UseVisualStyleBackColor = true;
+            this.Agree_check.CheckedChanged += new System.EventHandler(this.Agree_check_CheckedChanged);
             // 
             // True_check
             // 
@@ -174,9 +175,11 @@
             this.True_check.TabIndex = 11;
             this.True_check.Text = "All the choice I pick above are true";
             this.True_check.UseVisualStyleBackColor = true;
+            this.True_check.CheckedChanged += new System.EventHandler(this.True_check_CheckedChanged);
             // 
             // MAGIC_btn
             // 
+            this.MAGIC_btn.Enabled = false;
             this.MAGIC_btn.Location = new System.Drawing.Point(319, 146);
             this.MAGIC_btn.Name = "MAGIC_btn";
             this.MAGIC_btn.Size = new System.Drawing.Size(75, 23);

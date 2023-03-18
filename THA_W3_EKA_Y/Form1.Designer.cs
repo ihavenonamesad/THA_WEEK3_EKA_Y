@@ -89,9 +89,11 @@
             this.True_check.TabIndex = 5;
             this.True_check.Text = "All of the content I put above is true";
             this.True_check.UseVisualStyleBackColor = true;
+            this.True_check.CheckedChanged += new System.EventHandler(this.True_check_CheckedChanged);
             // 
             // Submit_btn
             // 
+            this.Submit_btn.Enabled = false;
             this.Submit_btn.Location = new System.Drawing.Point(66, 195);
             this.Submit_btn.Name = "Submit_btn";
             this.Submit_btn.Size = new System.Drawing.Size(120, 34);

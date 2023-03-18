@@ -37,15 +37,27 @@ namespace THA_W3_EKA_Y
 
         private void Submit_btn_Click(object sender, EventArgs e)
         {
+           
             if (True_check.Checked &&  open==true)
             {
-                second_window.Title("My name is " + name_plz.Text + ". My favorite artist is " + artist_plz.Text);
+                second_window.Title("Hi, My name is " + name_plz.Text + ". My favorite artist is " + artist_plz.Text);
             }
             if (Name_txt.Text == "" && Artist_txt.Text=="")
             {
                 MessageBox.Show("Enter the correct input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
+        private void True_check_CheckedChanged(object sender, EventArgs e)
+        {
+            if (True_check.Checked)
+            {
+                Submit_btn.Enabled = true;
+            }
+            else
+            {
+                Submit_btn.Enabled = false;
+            }
+        }
     }
 }

@@ -66,11 +66,13 @@ namespace THA_W3_EKA_Y
                 else
                 {
                     MessageBox.Show("Enter the correct input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
                 }
             }
             else
             {
                 MessageBox.Show("Enter the correct input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         } 
 
@@ -91,6 +93,29 @@ namespace THA_W3_EKA_Y
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Agree_check_CheckedChanged(object sender, EventArgs e)
+        {
+           if (Agree_check.Checked && True_check.Checked)
+           {
+                MAGIC_btn.Enabled=true;
+            }
+            else
+            {
+                MAGIC_btn.Enabled =false;
+            }
+        }
+
+        private void True_check_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Agree_check.Checked && True_check.Checked)
+            {
+                MAGIC_btn.Enabled = true;
+            } else
+            {
+                MAGIC_btn.Enabled = false;
+            }
         }
     }
 }
